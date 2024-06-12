@@ -25,18 +25,18 @@
   font-weight: 700;
   width: 100%;
   transition: ease-in-out 0.3s;
-  color: var(--mid-beige);
+  color: var(--dark-beige);
  }
 
 .bg-header {
   background-image: url(../assets/images/car-carrier.jpg);
-  background-color: var(--mid-green);
+  background-color: var(--dark-green);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 20%;
   position: relative;
   z-index: 1;
-  padding: 5rem;
+  padding: 6rem 0;
 }
 
 .bg-header::before {
@@ -56,6 +56,48 @@
 }
 
 .nav-link {
-  color: var(--mid-beige);
+  color: var(--dark-beige);
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  margin-right: 2.5rem;
+  line-height: 1.25rem;
 }
  
+.wrapper-header {
+  color: var(--light-beige);
+}
+
+.form, .quote {
+  padding: var(--size-50);
+}
+
+
+.bg-contrast {
+  background-color: rgba( 122, 186, 120, 0.2);
+  padding: 25px;
+}
+.data-fill {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+}
+.service-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: var(--size-30);
+  box-shadow: 0 0 10px rgba( 122, 186 , 120, 0.5px);
+  background: white;
+  border-radius: 8px;
+}
+.location {
+  text-align: center;
+}
+.about-us {
+  text-align: center;
+}
+.block-text h2, .block-text p {
+  color: var(--dark-green);
+}
