@@ -1,13 +1,13 @@
 :root {
-  --dark-green: #1A4D2E;
-  --mid-green: #4F6F52;
-  --light-green: #7ABA78;
-  --dark-beige: #E8DFCA;
-  --mid-beige: #E8DFCA;
-  --light-beige: #F5EFE6;
+  --dark-green: #1a4d2e;
+  --mid-green: #4f6f52;
+  --light-green: #7aba78;
+  --dark-beige: #e8dfca;
+  --mid-beige: #e8dfca;
+  --light-beige: #f5efe6;
   --font-color-base: #666;
   --font-color-link: orangered;
-  --austin-color: #BF5700;
+  --austin-color: #bf5700;
   --size-10: 0.625rem;
   --size-14: 0.875rem;
   --size-16: 1rem;
@@ -29,77 +29,90 @@ body {
   color: var(--font-color-base);
   margin: 0;
   padding: 0;
-  
+  width: 100%;
 }
- *,
- ::after,
- ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
- }
+}
 
- ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
- }
+}
 
- a { text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
- p {  margin-top: 0;}
+p {
+  margin-top: 0;
+}
 
- h2 {
+h2 {
   font-size: 2rem;
   font-weight: 500px;
   line-height: 1.2;
- }
- 
- img {
+}
+
+img {
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
   border-style: none;
- }
- 
- .container {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
- }
-
-.container form, div{
-  flex:1;
-
 }
 
- .btn {
+.container {
+  display: flex;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.container form,
+div {
+  flex: 1;
+}
+
+.btn {
   display: inline-block;
   font-weight: 400;
-  color: var(--font-color-base);
+  color: var(--mid-beige);
   text-align: center;
   cursor: pointer;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: var(--light-green);
+  border: 2px solid var(--dark-beige);
   padding: 0.375rem 0.75rem;
   border-radius: 0.6rem;
   transition: ease-in-out 0.3s;
- }
-
- .btn-light {
-  background-color: var(--light-beige);
-  color: var(--font-color-base);
-  box-shadow: 0px 5px 20px rgb(255, 255, 255, 0.5);
- }
-.btn-form {
-  margin-top: 15px;
 }
 
- input, label {
-  margin-top: 15px; 
- }
- @media (min-width:1200px) {
-  .container { max-width: 1140px;}
- }
+.btn-light {
+  background-color: var(--dark-green);
+  color: var(--dark-beige);
+  font-weight: 600;
+}
+.btn-light a {
+  text-decoration: none;
+  color: var(--light-green);
+}
+.btn-form {
+  margin-top: 15px;
+  border: 2px solid var(--light-green);
+  background-color: var(--dark-beige);
+  color: var(--dark-green);
+  font-weight: 600;
+}
+
+input,
+label {
+  margin-top: 15px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
